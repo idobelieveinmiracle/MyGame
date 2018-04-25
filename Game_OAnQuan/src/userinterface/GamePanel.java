@@ -123,7 +123,7 @@ public class GamePanel extends JPanel implements Runnable, KeyListener{
                 isRunning = false;
             }
             
-            while ( armys.getTurn() == Armys.COM_TURN ) {
+            while ( armys.getTurn() == Armys.COM_TURN && isRunning ) {
                 while ( System.nanoTime() - beginTime < 500000000 );
                 while ( System.nanoTime() - beginTime < 500000000 );
                 try {

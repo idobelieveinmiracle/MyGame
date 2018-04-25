@@ -119,7 +119,7 @@ public class GamePanel extends JPanel implements Runnable, KeyListener{
                 if ( armys.getResult() == Armys.LOSE ) {
                     JOptionPane.showMessageDialog(null, "YOU LOSE! AHIHI DO NGOX!" );
                 }
-                if ( armys.getResult() == Armys.HOA ) JOptionPane.showMessageDialog(null, "HOA MINZY" );
+                if ( armys.getResult() == Armys.DRAWN ) JOptionPane.showMessageDialog(null, "HOA MINZY" );
                 isRunning = false;
             }
             

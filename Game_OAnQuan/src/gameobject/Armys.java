@@ -19,7 +19,7 @@ public class Armys {
     public static final int RIGHT = 1;
     
     public static final int WIN = - 1;
-    public static final int HOA = 0;
+    public static final int DRAWN = 0;
     public static final int LOSE = 1;
     public static final int NOT_END = 2;
     
@@ -92,7 +92,7 @@ public class Armys {
         posComGen.x = posX + x;
         posComGen.y = posY + x;
         
-        turn = COM_TURN;
+        turn = MY_TURN;
         
         myScoreArm = 0;
         myScoreGen = 0;
@@ -387,7 +387,7 @@ public class Armys {
             myScoreArm += myScoreGen * 10;
             comScoreArm += comScoreGen * 10;
             if ( myScoreArm > comScoreArm ) result = WIN;
-            else if ( myScoreArm == comScoreArm ) result = HOA;
+            else if ( myScoreArm == comScoreArm ) result = DRAWN;
             else result = LOSE;
             return true;
         }

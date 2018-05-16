@@ -117,9 +117,9 @@ public class GamePanel extends JPanel implements Runnable, KeyListener{
                     JOptionPane.showMessageDialog(null, "YOU WIN" );
                 }
                 if ( armys.getResult() == Armys.LOSE ) {
-                    JOptionPane.showMessageDialog(null, "YOU LOSE! AHIHI DO NGOX!" );
+                    JOptionPane.showMessageDialog(null, "YOU LOSE!" );
                 }
-                if ( armys.getResult() == Armys.DRAWN ) JOptionPane.showMessageDialog(null, "HOA MINZY" );
+                if ( armys.getResult() == Armys.DRAWN ) JOptionPane.showMessageDialog(null, "YOU NOT WIN" );
                 isRunning = false;
             }
             
